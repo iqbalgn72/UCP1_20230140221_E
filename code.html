@@ -1,0 +1,187 @@
+<!-- Struktur dasar folder -->
+<!-- Folder: UCP1_NIM_Kelas -->
+
+<!-- File: index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduStart - Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Selamat Datang di EduStart</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="features.html">Fitur</a></li>
+        <li><a href="contact.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Aplikasi Belajar Interaktif</h2>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI9gfW6oT0Bdh2VcFf3Lxqm2fU-tS9ZPC0Dw&s" alt="Aplikasi Belajar" width="300" />
+      <p>Belajar jadi mudah, seru, dan interaktif dengan EduStart!</p>
+    </section>
+  </main>
+</body>
+</html>
+
+<!-- File: about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About EduStart</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Tentang Kami</h1>
+  </header>
+  <main>
+    <section>
+      <p>Visi kami adalah mencerdaskan bangsa melalui teknologi pendidikan modern. Tim kami terdiri dari pendidik dan developer berpengalaman.</p>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Fitur</th>
+            <th>EduStart</th>
+            <th>Kompetitor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Belajar Interaktif</td>
+            <td>✓</td>
+            <td>X</td>
+          </tr>
+          <tr>
+            <td>Quiz Real-time</td>
+            <td>✓</td>
+            <td>✓</td>
+          </tr>
+          <tr>
+            <td>Akses Gratis</td>
+            <td>✓</td>
+            <td>X</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
+
+<!-- File: features.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fitur</title>
+  <style>
+    body {
+      font-family: Arial;
+      background-color: #eaf4fc;
+      color: #333;
+      padding: 20px;
+    }
+    .gallery img {
+      width: 150px;
+      margin: 10px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Galeri Fitur EduStart</h1>
+  <div class="gallery">
+    <img src="https://mahasiswaindonesia.id/wp-content/uploads/2020/05/kelas-online.jpeg" alt="Fitur 1" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTAgRA6D1JDrD-suukDRqy6NAJrvPiR-hqeA&s" alt="Fitur 2" />
+  </div>
+  <section>
+    <h2>Video Pembelajaran</h2>
+    <video controls width="320">
+      <source src="https://youtu.be/YbefSM20iHE" type="video/mp4">
+      Browser Anda tidak mendukung video ini.
+    </video>
+  </section>
+</body>
+</html>
+
+<!-- File: contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontak</title>
+  <style>
+    body {
+      background-color: #fdf9f3;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    input, button {
+      margin-bottom: 10px;
+    }
+  </style>
+  <script>
+    function handleSubmit() {
+      alert('Pesan Anda Terkirim!');
+    }
+  </script>
+</head>
+<body>
+  <h1>Hubungi Kami</h1>
+  <form onsubmit="handleSubmit(); return false;">
+    <label>Nama:</label><br />
+    <input type="text" name="nama" required /><br />
+    <label>Email:</label><br />
+    <input type="email" name="email" required /><br />
+    <label>Minat Belajar:</label><br />
+    <input type="text" name="minat" /><br /><br />
+    <button type="submit">Kirim</button>
+  </form>
+</body>
+</html>
+
+<!-- File: styles.css (CSS eksternal) -->
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f9ff;
+  color: #333;
+  padding: 20px;
+}
+header {
+  background-color: #4a90e2;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding: 0;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* BONUS: Popup JavaScript */
+<script>
+  window.onload = function() {
+    setTimeout(() => {
+      alert("Promo Spesial! Daftar sekarang dan dapatkan diskon 50%!");
+    }, 3000);
+  };
+</script>
